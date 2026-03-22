@@ -1,0 +1,63 @@
+- title: "GHMSA-Net: Gated Hierarchical Multi-Scale Self-Attention for Perceptually-Guided AV1 Post-Processing"
+  authors: "VCP-Lab"
+  journal: "IEEE Access"
+  year: 2025
+  highlight: 1
+
+- title: "DRGNet: Enhanced VVC Reconstructed Frames Using Dual-Path Residual Gating for High-Resolution Video"
+  authors: "VCP-Lab"
+  journal: "Sensors"
+  year: 2025
+  highlight: 1
+
+- title: "Multi-Scale Self-Attention-Based Convolutional-Neural-Network Post-Filtering for AV1 Codec"
+  authors: "VCP-Lab"
+  journal: "Mathematics"
+  year: 2025
+
+- title: "DREFNet: Deep Residual Enhanced Feature GAN for VVC Compressed Video Quality Improvement"
+  authors: "VCP-Lab"
+  journal: "Mathematics"
+  year: 2025
+
+- title: "YOLO11-Driven Deep Learning Approach for Enhanced Detection and Visualization of Wrist Fractures in X-Ray Images"
+  authors: "VCP-Lab"
+  journal: "Mathematics"
+  year: 2025
+
+- title: "Multi-Type Self-Attention-Based CNN Post-Filtering for AV1 Codec"
+  authors: "VCP-Lab"
+  journal: "Mathematics"
+  year: 2024
+
+- title: "Versatile Video Coding-Post Processing Feature Fusion"
+  authors: "VCP-Lab"
+  journal: "Applied Sciences"
+  year: 2024
+
+- title: "Block Partitioning Information-Based CNN Post-Filtering for EVC Baseline Profile"
+  authors: "VCP-Lab"
+  journal: "Sensors"
+  year: 2024
+
+- title: "High Quality Video Frames from VVC: A Deep Neural Network Approach"
+  authors: "VCP-Lab"
+  journal: "IEEE Access"
+  year: 2023
+
+- title: "Efficient Feature Coding Based on Performance Analysis of VVC in Video Coding for Machines"
+  authors: "VCP-Lab"
+  journal: "Multimedia Tools and Applications"
+  year: 2023
+
+- title: "Depth-wise Split Unit Coding Order for Video Compression"
+  authors: "VCP-Lab"
+  journal: "IEEE Transactions on Circuits and Systems for Video Technology"
+  year: 2022
+  highlight: 1
+
+- title: "Low-Complexity Intra Coding in Versatile Video Coding"
+  authors: "VCP-Lab"
+  journal: "IEEE Transactions on Consumer Electronics"
+  year: 2022
+  highlight: 1
