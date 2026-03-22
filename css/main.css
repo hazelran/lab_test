@@ -16,6 +16,7 @@ body {
   font-size: 16px;
   color: #333;
   background: #fff;
+  padding-top: 50px;
 }
 
 a { color: #8B1A1A; text-decoration: none; }
