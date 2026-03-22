@@ -1,0 +1,159 @@
+---
+layout: default
+title: Research
+permalink: /research/
+---
+
+<div class="col-sm-12">
+
+  <h2 class="section-heading">Our Research</h2>
+
+  <p>
+    Our vision is to develop advanced video and media technologies aligned with international
+    standards, leveraging AI and deep learning to push the frontiers of visual quality and
+    compression efficiency.
+  </p>
+  <p>
+    Our research incorporates elements from deep learning, signal processing, computer vision,
+    video coding standards, and international standardization bodies including MPEG and JVET.
+  </p>
+
+  <hr>
+
+  <!-- Theme 1 -->
+  <div class="research-theme">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="{{ site.baseurl }}/images/themepic/video_coding.png"
+             alt="Video Coding Standards"
+             onerror="this.style.display='none'">
+      </div>
+      <div class="col-sm-9">
+        <h3>Video Coding Standards</h3>
+        <p>
+          We actively contribute to international video coding standardization through
+          <strong>JVET</strong> (Joint Video Experts Team) and <strong>MPEG</strong>
+          (ISO/IEC JTC1/SC29). Our work spans VVC (H.266), HEVC (H.265), AVC (H.264),
+          AV1, and EVC — developing faster algorithms, lower-complexity implementations,
+          and novel coding tools. Prof. Choi served as Chairman of the Ad Hoc Group on
+          the Essential Video Coding (EVC) standard and received the
+          <strong>ISO/IEC Excellence Award (2022)</strong>.
+        </p>
+        <p class="theme-members">Team members: <em>Prof. Kiho Choi, VCP-Lab members</em></p>
+
+        <p class="theme-papers-title">Selected papers</p>
+        <ol>
+          {% for pub in site.data.publist %}
+          {% if pub.theme == "standards" %}
+          <li style="font-size:13px; margin-bottom:8px;">
+            <strong>&ldquo;{{ pub.title }}&rdquo;</strong><br>
+            <span style="color:#666;">{{ pub.authors }}</span><br>
+            <em style="color:#888;">{{ pub.journal }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}
+            <div class="pub-links" style="margin-top:3px;">
+              {% if pub.url %}<a href="{{ pub.url }}" target="_blank">DOI</a>{% endif %}
+              {% if pub.arxiv %}<a href="{{ pub.arxiv }}" target="_blank">ARXIV</a>{% endif %}
+            </div>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- Theme 2 -->
+  <div class="research-theme">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="{{ site.baseurl }}/images/themepic/ai_video.png"
+             alt="AI-based Video Enhancement"
+             onerror="this.style.display='none'">
+      </div>
+      <div class="col-sm-9">
+        <h3>AI-based Video Enhancement</h3>
+        <p>
+          We develop deep learning models — CNN, GAN, and Transformer architectures —
+          to enhance the quality of compressed video and images as in-loop or post-processing
+          filters. Our work focuses on multi-scale attention mechanisms, residual learning, and
+          perceptual quality optimization for major codecs including VVC, HEVC, AV1, and EVC.
+        </p>
+        <p class="theme-members">Team members: <em>Tanni, Xilong, Junghyun, Zezhen Gai, Zhao Bopu, Prof. Choi</em></p>
+
+        <p class="theme-papers-title">Selected papers</p>
+        <ol>
+          {% for pub in site.data.publist %}
+          {% if pub.theme == "ai" %}
+          <li style="font-size:13px; margin-bottom:8px;">
+            <strong>&ldquo;{{ pub.title }}&rdquo;</strong><br>
+            <span style="color:#666;">{{ pub.authors }}</span><br>
+            <em style="color:#888;">{{ pub.journal }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}
+            <div class="pub-links" style="margin-top:3px;">
+              {% if pub.url %}<a href="{{ pub.url }}" target="_blank">DOI</a>{% endif %}
+            </div>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- Theme 3 -->
+  <div class="research-theme">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="{{ site.baseurl }}/images/themepic/vcm.png"
+             alt="Video Coding for Machines"
+             onerror="this.style.display='none'">
+      </div>
+      <div class="col-sm-9">
+        <h3>Video Coding for Machines (VCM)</h3>
+        <p>
+          As machine vision becomes pervasive in autonomous systems and smart infrastructure,
+          we study how to compress visual data optimized for downstream AI tasks rather than
+          human perception. This includes contributions to the MPEG FCVCM (Feature Coding for
+          Video and Image Coding for Machines) standard, exploring efficient feature
+          representations that preserve task-relevant information.
+        </p>
+        <p class="theme-members">Team members: <em>Xilong Liang, Prof. Choi</em></p>
+
+        <p class="theme-papers-title">Selected papers</p>
+        <ol>
+          {% for pub in site.data.publist %}
+          {% if pub.theme == "vcm" %}
+          <li style="font-size:13px; margin-bottom:8px;">
+            <strong>&ldquo;{{ pub.title }}&rdquo;</strong><br>
+            <span style="color:#666;">{{ pub.authors }}</span><br>
+            <em style="color:#888;">{{ pub.journal }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- Theme 4 -->
+  <div class="research-theme">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="{{ site.baseurl }}/images/themepic/immersive.png"
+             alt="Immersive Media"
+             onerror="this.style.display='none'">
+      </div>
+      <div class="col-sm-9">
+        <h3>Immersive &amp; Next-Generation Media</h3>
+        <p>
+          We look ahead to 4K/8K/16K ultra-high-resolution video, VR, AR, and 360°
+          omnidirectional video — developing compression and processing technologies to
+          support the next generation of immersive media. This includes our IITP-funded
+          project on next-generation media compression for Metaverse content.
+        </p>
+        <p class="theme-members">Team members: <em>VCP-Lab members, Prof. Choi</em></p>
+      </div>
+    </div>
+  </div>
+
+  <p>&hellip; and more. See the full <a href="{{ site.baseurl }}/publications/">Publications</a> list.</p>
+
+</div>

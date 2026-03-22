@@ -1,0 +1,63 @@
+---
+layout: default
+title: Members
+permalink: /members/
+---
+
+<div class="col-sm-12">
+  <h2 class="section-heading">Lab Members</h2>
+
+  <h3>Principal Investigator</h3>
+  <div class="row">
+    {% for member in site.data.team %}
+    {% if member.role == "Principal Investigator" %}
+    <div class="col-sm-3 col-xs-6">
+      <div class="team-member">
+        <img src="{{ site.baseurl }}/images/team/{{ member.photo }}"
+             alt="{{ member.name }}"
+             onerror="this.style.background='#eee'; this.src='';">
+        <h4>{{ member.name }}</h4>
+        <p>{{ member.role }}</p>
+        {% if member.email %}<p><a href="mailto:{{ member.email }}">{{ member.email }}</a></p>{% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+
+  <h3>Graduate Students</h3>
+  <div class="row">
+    {% for member in site.data.team %}
+    {% unless member.role == "Principal Investigator" or member.role == "Intern" %}
+    <div class="col-sm-3 col-xs-6">
+      <div class="team-member">
+        <img src="{{ site.baseurl }}/images/team/{{ member.photo }}"
+             alt="{{ member.name }}"
+             onerror="this.style.background='#eee'; this.src='';">
+        <h4>{{ member.name }}</h4>
+        <p>{{ member.role }}</p>
+        <p class="text-muted-sm">{{ member.info }}</p>
+      </div>
+    </div>
+    {% endunless %}
+    {% endfor %}
+  </div>
+
+  <h3>Interns</h3>
+  <div class="row">
+    {% for member in site.data.team %}
+    {% if member.role == "Intern" %}
+    <div class="col-sm-3 col-xs-6">
+      <div class="team-member">
+        <img src="{{ site.baseurl }}/images/team/{{ member.photo }}"
+             alt="{{ member.name }}"
+             onerror="this.style.background='#eee'; this.src='';">
+        <h4>{{ member.name }}</h4>
+        <p>{{ member.role }}</p>
+        <p class="text-muted-sm">{{ member.info }}</p>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

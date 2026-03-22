@@ -1,0 +1,16 @@
+title: VCP-Lab
+longtitle: Video Coding & Processing Lab
+description: Video Coding & Processing Lab — Kyung Hee University
+url: "https://your-username.github.io"
+baseurl: ""
+
+owner: "Prof. Kiho Choi"
+email: aikiho@khu.ac.kr
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

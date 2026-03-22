@@ -1,0 +1,99 @@
+---
+layout: homelay
+title: Home
+permalink: /
+---
+
+<div class="col-sm-8">
+
+  <h3>Welcome to the VCP-Lab!</h3>
+
+  <p>
+    <b>Video Coding & Processing Lab</b> is engaged in researching video, image, and media
+    technologies aligned with international standards. With an eye toward social and
+    technological changes, we actively explore advanced media including 4K/8K/16K videos
+    and VR/AR realistic videos, in order to anticipate the future of highly immersive media.
+  </p>
+  <p>
+    Our lab is committed to building greater competence in standardization, and we are eager
+    to provide greater support toward the next media business. We collaborate with global
+    IT companies including <strong>Samsung Electronics</strong>, <strong>LG Electronics</strong>,
+    and <strong>Qualcomm</strong>, and actively contribute to <strong>MPEG</strong> and
+    <strong>JVET</strong> standardization.
+  </p>
+
+  <!-- Carousel -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="carousel-placeholder">[ Add lab photo — images/slider7001400/photo1.jpg ]</div>
+      </div>
+      <div class="item">
+        <div class="carousel-placeholder">[ Add conference photo — images/slider7001400/photo2.jpg ]</div>
+      </div>
+      <div class="item">
+        <div class="carousel-placeholder">[ Add group photo — images/slider7001400/photo3.jpg ]</div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+
+  <p>&nbsp;</p>
+
+  <h3>Research</h3>
+  <p>
+    Our research incorporates elements from deep learning, signal processing, computer vision,
+    and international standardization. You can find an overview of our research themes at our
+    <a href="{{ site.baseurl }}/research/">Research page</a>.
+  </p>
+
+  <p>
+    <b>We are looking for passionate new PhD students, Postdocs, and Master students to join
+    the team</b> <a href="{{ site.baseurl }}/openings/">(more info)</a>!
+  </p>
+
+  <p>&nbsp;</p>
+
+  <!-- Funding logos -->
+  <div class="row" style="margin-top: 10px;">
+    <div class="col-sm-4 col-xs-6" style="margin-bottom: 10px;">
+      <img src="{{ site.baseurl }}/images/logopic/khu_logo.png"
+           alt="Kyung Hee University"
+           style="max-height:50px; max-width:100%;"
+           onerror="this.style.display='none'">
+    </div>
+    <div class="col-sm-4 col-xs-6" style="margin-bottom: 10px;">
+      <img src="{{ site.baseurl }}/images/logopic/iitp_logo.png"
+           alt="IITP"
+           style="max-height:50px; max-width:100%;"
+           onerror="this.style.display='none'">
+    </div>
+  </div>
+
+</div><!-- col-sm-8 -->
+
+<!-- Right column: News -->
+<div class="col-sm-4">
+  <h4>News</h4>
+
+  {% for item in site.data.news limit:12 %}
+  <div class="news-item {{ item.category }}">
+    <span class="news-date">{{ item.date }}</span>
+    <span class="news-text">{{ item.headline | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+  </div>
+  {% endfor %}
+
+  <p style="margin-top:10px; font-size:13px;">
+    <a href="{{ site.baseurl }}/news/">... see all News</a>
+  </p>
+</div><!-- col-sm-4 -->

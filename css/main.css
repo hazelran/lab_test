@@ -1,0 +1,246 @@
+/* ==============================================
+   VCP-Lab — Allan Lab style, VCP brand colors
+   ============================================== */
+
+/* Brand colors extracted from slides & logo:
+   Crimson:  #8B1A1A  (slide headers)
+   Dark:     #1a1a2e
+   Text:     #333333
+   Muted:    #666666
+   Border:   #dddddd
+   Light bg: #f8f8f8
+*/
+
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background: #fff;
+}
+
+a { color: #8B1A1A; text-decoration: none; }
+a:hover { color: #5a1010; text-decoration: underline; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+  background: #fff !important;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  padding: 0;
+  min-height: 50px;
+}
+
+.navbar-brand {
+  padding: 6px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-nav > li > a {
+  color: #444 !important;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 12px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: color 0.2s;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a {
+  color: #8B1A1A !important;
+  background: transparent !important;
+}
+
+.navbar-toggle .icon-bar { background-color: #444; }
+
+/* ---- Page header ---- */
+#homelay h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* ---- Slider ---- */
+#myCarousel {
+  margin-bottom: 20px;
+}
+#myCarousel .item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+.carousel-placeholder {
+  width: 100%;
+  height: 280px;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+/* ---- Home layout ---- */
+#homelay {
+  padding: 20px 0;
+}
+
+/* ---- News list ---- */
+.news-item {
+  display: flex;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.news-item:last-child { border-bottom: none; }
+.news-date {
+  white-space: nowrap;
+  color: #888;
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 80px;
+  padding-top: 2px;
+}
+.news-item.news1 .news-text { color: #8B1A1A; font-weight: 600; }
+.news-item.news2 .news-text { color: #333; }
+
+/* ---- Publication list (Allan Lab style) ---- */
+.pub-row {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+.pub-row:last-child { border-bottom: none; }
+.pub-title { font-weight: 700; font-size: 15px; margin-bottom: 3px; }
+.pub-title a { color: #333; }
+.pub-title a:hover { color: #8B1A1A; }
+.pub-authors { font-size: 14px; color: #555; margin-bottom: 2px; }
+.pub-venue { font-size: 13px; color: #777; margin-bottom: 5px; }
+.pub-links a {
+  display: inline-block;
+  margin-right: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #8B1A1A;
+  border: 1px solid #8B1A1A;
+  border-radius: 2px;
+  padding: 1px 6px;
+  text-decoration: none;
+}
+.pub-links a:hover {
+  background: #8B1A1A;
+  color: #fff;
+}
+
+/* Highlight box */
+.pub-highlight-box {
+  background: #fdf8f8;
+  border: 1px solid #e8c8c8;
+  border-radius: 4px;
+  padding: 18px;
+  margin-bottom: 24px;
+}
+.pub-highlight-box img {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+/* ---- Research themes ---- */
+.research-theme {
+  padding: 24px 0;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.research-theme:last-child { border-bottom: none; }
+.research-theme img {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.research-theme h3 {
+  font-size: 18px;
+  color: #8B1A1A;
+  margin-bottom: 8px;
+}
+.research-theme p { font-size: 14px; line-height: 1.7; color: #444; }
+.theme-members { font-size: 13px; color: #888; font-style: italic; margin-top: 8px; }
+.theme-papers-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #aaa;
+  margin: 12px 0 6px;
+}
+
+/* ---- Team ---- */
+.team-member { text-align: center; margin-bottom: 20px; }
+.team-member img {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  margin-bottom: 8px;
+  background: #eee;
+}
+.team-member h4 { font-size: 15px; margin-bottom: 2px; }
+.team-member p { font-size: 13px; color: #777; margin: 0; }
+
+/* ---- Section headings ---- */
+.section-heading {
+  font-size: 22px;
+  border-bottom: 2px solid #8B1A1A;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+/* ---- Collapsible abstract/bib ---- */
+.pub-collapsible {
+  display: none;
+  margin-top: 8px;
+  padding: 10px 14px;
+  background: #fafafa;
+  border-left: 3px solid #8B1A1A;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #444;
+}
+.pub-collapsible.open { display: block; }
+.pub-collapsible pre {
+  margin: 0; font-size: 12px;
+  white-space: pre-wrap; word-break: break-word;
+  background: transparent; border: none; padding: 0;
+}
+
+/* ---- Footer ---- */
+#footer {
+  background: #1a1a1a;
+  color: rgba(255,255,255,0.6);
+  padding: 24px 0 16px;
+  margin-top: 40px;
+  font-size: 13px;
+}
+#footer a { color: rgba(255,255,255,0.75); }
+#footer a:hover { color: #fff; text-decoration: underline; }
+#footer .footer-lab { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+#footer .footer-credit { font-size: 12px; margin: 0; }
+
+/* ---- Utilities ---- */
+.crimson { color: #8B1A1A; }
+.text-muted-sm { font-size: 13px; color: #888; }

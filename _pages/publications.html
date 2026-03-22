@@ -1,0 +1,88 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+
+<div class="col-sm-12">
+
+  <h2 class="section-heading">Publications</h2>
+  <p><em>(See also the personal webpages of our group members)</em></p>
+
+  <!-- Group Highlights -->
+  <h3>Group Highlights</h3>
+  <p><em>(For the full list, see <a href="#fulllist">below</a>)</em></p>
+
+  <div class="row">
+    {% for pub in site.data.publist %}
+    {% if pub.highlight == 1 %}
+    <div class="col-sm-6">
+      <div class="pub-highlight-box">
+        {% if pub.image %}
+        <img src="{{ site.baseurl }}/images/pubpic/{{ pub.image }}" alt="{{ pub.title }}">
+        {% endif %}
+        <div class="pub-title"><a {% if pub.url %}href="{{ pub.url }}" target="_blank"{% endif %}>{{ pub.title }}</a></div>
+        <div class="pub-authors">{{ pub.authors }}</div>
+        <div class="pub-venue"><em>{{ pub.journal }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}</div>
+        {% if pub.description %}
+        <p style="font-size:13px; margin-top:6px; color:#555;">{{ pub.description | truncate: 200 }}</p>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+
+  <hr>
+
+  <!-- Full list -->
+  <h3 id="fulllist">List of Publications</h3>
+
+  {% assign pubs_by_year = site.data.publist | group_by: "year" | sort: "name" | reverse %}
+  {% for year_group in pubs_by_year %}
+  <h4 style="color:#8B1A1A; border-bottom:1px solid #eee; padding-bottom:4px; margin-top:24px;">
+    {{ year_group.name }}
+  </h4>
+  <ol>
+    {% for pub in year_group.items %}
+    {% assign abs_id = forloop.index | prepend: "abs-" | append: "-" | append: year_group.name %}
+    {% assign bib_id = forloop.index | prepend: "bib-" | append: "-" | append: year_group.name %}
+    <li style="margin-bottom:14px;">
+      <div class="pub-title">
+        <strong>&ldquo;{{ pub.title }}&rdquo;</strong>
+      </div>
+      <div class="pub-authors">{{ pub.authors }}</div>
+      <div class="pub-venue">
+        <em>{{ pub.journal }}</em>{% if pub.volume %}, vol.&nbsp;{{ pub.volume }}{% endif %}{% if pub.pages %}, pp.&nbsp;{{ pub.pages }}{% endif %}{% if pub.year %}, {{ pub.year }}{% endif %}
+      </div>
+      <div class="pub-links">
+        {% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank">PDF</a>{% endif %}
+        {% if pub.url %}<a href="{{ pub.url }}" target="_blank">DOI</a>{% endif %}
+        {% if pub.arxiv %}<a href="{{ pub.arxiv }}" target="_blank">ARXIV</a>{% endif %}
+        {% if pub.description %}<a class="pub-toggle" data-target="{{ abs_id }}" style="cursor:pointer;">ABS</a>{% endif %}
+        {% if pub.bibtex %}<a class="pub-toggle" data-target="{{ bib_id }}" style="cursor:pointer;">BIB</a>{% endif %}
+      </div>
+      {% if pub.description %}
+      <div class="pub-collapsible" id="{{ abs_id }}">{{ pub.description }}</div>
+      {% endif %}
+      {% if pub.bibtex %}
+      <div class="pub-collapsible pub-bib" id="{{ bib_id }}"><pre>{{ pub.bibtex }}</pre></div>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+  {% endfor %}
+
+</div>
+
+<script>
+document.querySelectorAll('.pub-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var el = document.getElementById(this.getAttribute('data-target'));
+    if (el) {
+      el.classList.toggle('open');
+      this.style.fontWeight = el.classList.contains('open') ? '900' : '';
+    }
+  });
+});
+</script>
