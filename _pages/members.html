@@ -5,59 +5,101 @@ permalink: /members/
 ---
 
 <div class="col-sm-12">
-  <h2 class="section-heading">Lab Members</h2>
+  <h2 class="section-heading">Members</h2>
 
-  <h3>Principal Investigator</h3>
+  <!-- Researcher (Post Doc.) -->
+  <h3>Researcher (Post Doc.)</h3>
   <div class="row">
     {% for member in site.data.team %}
-    {% if member.role == "Principal Investigator" %}
+    {% if member.role == "Researcher (Post Doc.)" %}
     <div class="col-sm-3 col-xs-6">
       <div class="team-member">
         <img src="{{ site.baseurl }}/images/team/{{ member.photo }}"
              alt="{{ member.name }}"
              onerror="this.style.background='#eee'; this.src='';">
         <h4>{{ member.name }}</h4>
-        <p>{{ member.role }}</p>
-        {% if member.email %}<p><a href="mailto:{{ member.email }}">{{ member.email }}</a></p>{% endif %}
+        {% if member.email %}<p style="font-size:13px;">Email: <a href="mailto:{{ member.email }}">{{ member.email }}</a></p>{% endif %}
+        {% if member.info %}<p class="text-muted-sm">{{ member.info }}</p>{% endif %}
       </div>
     </div>
     {% endif %}
     {% endfor %}
   </div>
 
-  <h3>Graduate Students</h3>
+  <!-- Research Assistant (Ph. D. Students) -->
+  <h3>Research Assistant (Ph. D. Students)</h3>
   <div class="row">
     {% for member in site.data.team %}
-    {% unless member.role == "Principal Investigator" or member.role == "Intern" %}
+    {% if member.role == "Ph.D. Student" %}
     <div class="col-sm-3 col-xs-6">
       <div class="team-member">
         <img src="{{ site.baseurl }}/images/team/{{ member.photo }}"
              alt="{{ member.name }}"
              onerror="this.style.background='#eee'; this.src='';">
         <h4>{{ member.name }}</h4>
-        <p>{{ member.role }}</p>
-        <p class="text-muted-sm">{{ member.info }}</p>
-      </div>
-    </div>
-    {% endunless %}
-    {% endfor %}
-  </div>
-
-  <h3>Interns</h3>
-  <div class="row">
-    {% for member in site.data.team %}
-    {% if member.role == "Intern" %}
-    <div class="col-sm-3 col-xs-6">
-      <div class="team-member">
-        <img src="{{ site.baseurl }}/images/team/{{ member.photo }}"
-             alt="{{ member.name }}"
-             onerror="this.style.background='#eee'; this.src='';">
-        <h4>{{ member.name }}</h4>
-        <p>{{ member.role }}</p>
-        <p class="text-muted-sm">{{ member.info }}</p>
+        {% if member.email %}<p style="font-size:13px;">Email: <a href="mailto:{{ member.email }}">{{ member.email }}</a></p>{% endif %}
+        {% if member.info %}<p class="text-muted-sm">{{ member.info }}</p>{% endif %}
       </div>
     </div>
     {% endif %}
     {% endfor %}
   </div>
+
+  <!-- Research Assistant (M.S. Students) -->
+  <h3>Research Assistant (M.S. Students)</h3>
+  <div class="row">
+    {% for member in site.data.team %}
+    {% if member.role == "M.S. Student" %}
+    <div class="col-sm-3 col-xs-6">
+      <div class="team-member">
+        <img src="{{ site.baseurl }}/images/team/{{ member.photo }}"
+             alt="{{ member.name }}"
+             onerror="this.style.background='#eee'; this.src='';">
+        <h4>{{ member.name }}</h4>
+        {% if member.email %}<p style="font-size:13px;">Email: <a href="mailto:{{ member.email }}">{{ member.email }}</a></p>{% endif %}
+        {% if member.info %}<p class="text-muted-sm">{{ member.info }}</p>{% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- Alumni -->
+  <h3>Alumni</h3>
+  <div class="row">
+    {% for member in site.data.team %}
+    {% if member.role == "Alumni" %}
+    <div class="col-sm-3 col-xs-6">
+      <div class="team-member">
+        <img src="{{ site.baseurl }}/images/team/{{ member.photo }}"
+             alt="{{ member.name }}"
+             onerror="this.style.background='#eee'; this.src='';">
+        <h4>{{ member.name }}</h4>
+        {% if member.email %}<p style="font-size:13px;">Email: <a href="mailto:{{ member.email }}">{{ member.email }}</a></p>{% endif %}
+        {% if member.info %}<p class="text-muted-sm">{{ member.info }}</p>{% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- Undergraduate Research Assistant Alumni -->
+  <h3>Undergraduate Research Assistant Alumni</h3>
+  <div class="row">
+    {% for member in site.data.team %}
+    {% if member.role == "Undergraduate Research Assistant Alumni" %}
+    <div class="col-sm-3 col-xs-6">
+      <div class="team-member">
+        <img src="{{ site.baseurl }}/images/team/{{ member.photo }}"
+             alt="{{ member.name }}"
+             onerror="this.style.background='#eee'; this.src='';">
+        <h4>{{ member.name }}</h4>
+        {% if member.email %}<p style="font-size:13px;">Email: <a href="mailto:{{ member.email }}">{{ member.email }}</a></p>{% endif %}
+        {% if member.info %}<p class="text-muted-sm">{{ member.info }}</p>{% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+
 </div>
