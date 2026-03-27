@@ -45,7 +45,7 @@
   image: "ghmsa_net.png"
   category: "International Journal"
   id: "IJ28"
-  url: "https://ieeexplore.ieee.org/document/10684507"
+  url: "https://ieeexplore.ieee.org/abstract/document/11114914"
   description: >
     The AOMedia Video 1 (AV1) codec achieves excellent compression efficiency but often introduces visually distracting
     artifacts at high quantization parameters (QPs), impairing perceptual quality. We propose Gated Hierarchical
@@ -59,15 +59,15 @@
     10.55% (Y), 22.49% (Cb), and 21.44% (Cr) for BD-MS-SSIM; and 15.44% for BD-VMAF across QPs 20, 32, 43, 55, and 63.
     Visual assessments validate the model's effectiveness in artifact removal and perceptual quality enhancement.
   bibtex: |
-    @ARTICLE{10684507,
+    @ARTICLE{11114914,
       author={Zhao, Bopu and Gwun, Woowoen and Choi, Kiho},
-      journal={IEEE Access},
-      title={GHMSA-Net: Gated Hierarchical Multi-Scale Self-Attention for Perceptually-Guided AV1 Post-Processing},
+      journal={IEEE Access}, 
+      title={GHMSA-Net: Gated Hierarchical Multi-Scale Self-Attention for Perceptually-Guided AV1 Post-Processing}, 
       year={2025},
       volume={13},
       number={},
       pages={138601-138621},
-      keywords={Video compression;post-processing;convolutional neural networks;attention mechanism},
+      keywords={Filters;Convolutional neural networks;Codecs;Encoding;Decoding;Attention mechanisms;Training;Standards;Adaptation models;Videos;Video compression;post-processing;convolutional neural networks;attention mechanism},
       doi={10.1109/ACCESS.2025.3596303}
     }
 
