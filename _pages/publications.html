@@ -13,25 +13,40 @@ permalink: /publications/
   <h3>Group Highlights</h3>
   <p><em>(For the full list, see <a href="#fulllist">below</a>)</em></p>
 
-  <div class="row">
-    {% for pub in site.data.publist %}
-    {% if pub.highlight == 1 %}
-    <div class="col-sm-6">
-      <div class="pub-highlight-box">
-        {% if pub.image %}
-        <img src="{{ site.baseurl }}/images/pubpic/{{ pub.image }}" alt="{{ pub.title }}">
-        {% endif %}
-        <div class="pub-title"><a {% if pub.url %}href="{{ pub.url }}" target="_blank"{% endif %}>{{ pub.title }}</a></div>
-        <div class="pub-authors">{{ pub.authors }}</div>
-        <div class="pub-venue"><em>{{ pub.journal }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}</div>
+  {% for pub in site.data.publist %}
+  {% if pub.highlight == 1 %}
+  <div class="pub-highlight-box" style="margin-bottom: 24px;">
+    <div class="row">
+      {% if pub.image %}
+      <div class="col-sm-4" style="margin-bottom: 10px;">
+        <img src="{{ site.baseurl }}/images/pubpic/{{ pub.image }}"
+             alt="{{ pub.title }}"
+             style="width:100%; border:1px solid #ddd; border-radius:3px;">
+      </div>
+      <div class="col-sm-8">
+      {% else %}
+      <div class="col-sm-12">
+      {% endif %}
+        <div class="pub-title">
+          <a {% if pub.url %}href="{{ pub.url }}" target="_blank"{% endif %}>{{ pub.title }}</a>
+        </div>
+        <div class="pub-authors" style="margin-bottom:2px;">{{ pub.authors }}</div>
+        <div class="pub-venue" style="margin-bottom:6px;">
+          <em>{{ pub.journal }}</em>{% if pub.volume %}, vol.&nbsp;{{ pub.volume }}{% endif %}{% if pub.pages %}, pp.&nbsp;{{ pub.pages }}{% endif %}{% if pub.year %}, {{ pub.year }}{% endif %}
+        </div>
         {% if pub.description %}
-        <p style="font-size:13px; margin-top:6px; color:#555;">{{ pub.description | truncate: 200 }}</p>
+        <p style="font-size:13px; color:#555; line-height:1.65; margin-bottom:6px;">{{ pub.description }}</p>
         {% endif %}
+        <div class="pub-links">
+          {% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank">PDF</a>{% endif %}
+          {% if pub.url %}<a href="{{ pub.url }}" target="_blank">DOI</a>{% endif %}
+          {% if pub.arxiv %}<a href="{{ pub.arxiv }}" target="_blank">ARXIV</a>{% endif %}
+        </div>
       </div>
     </div>
-    {% endif %}
-    {% endfor %}
   </div>
+  {% endif %}
+  {% endfor %}
 
   <hr>
 
