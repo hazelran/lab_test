@@ -17,14 +17,6 @@ permalink: /publications/
   {% if pub.highlight == 1 %}
   <div class="pub-highlight-box" style="margin-bottom: 24px;">
     <div class="row">
-      {% if pub.image %}
-      <div class="col-sm-12" style="margin-bottom: 10px;">
-        <img src="{{ site.baseurl }}/images/pubpic/{{ pub.image }}"
-             alt="{{ pub.title }}"
-             style="width:100%; border:1px solid #ddd; border-radius:3px;">
-      </div>
-      {% endif %}
-      <div class="col-sm-12">
         <div class="pub-title">
           <a {% if pub.url %}href="{{ pub.url }}" target="_blank"{% endif %}>{{ pub.title }}</a>
         </div>
