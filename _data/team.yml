@@ -1,6 +1,6 @@
 - name: "Prof. Kiho Choi"
   role: "Principal Investigator"
-  photo: "prof_choi.jpg"
+  photo: "Prof.jpg"
   email: aikiho@khu.ac.kr
   info: "Associate Professor, Department of Electronic Engineering, Kyung Hee University"
 
@@ -12,25 +12,25 @@
 
 - name: "Tanni Das"
   role: "Ph.D. Student"
-  photo: "tanni_das.jpg"
+  photo: "Tanni.jpg"
   email: tannidascu@gmail.com
   info: "Research Interest: AI (deep learning) based video processing, AI (deep learning) based super resolution"
 
 - name: "Mubashir Tariq"
   role: "Ph.D. Student"
-  photo: "mubashir_tariq.jpg"
+  photo: "Tariq.jpg"
   email: mubashirtariq9@gmail.com
   info: "Research Interest: AI (deep learning) based video processing, AI (deep learning) based super resolution"
 
 - name: "Zezhen Gai"
   role: "Ph.D. Student"
-  photo: "zezhen_gai.jpg"
+  photo: "zezhen.jpg"
   email: wulangzz@naver.com
   info: "Research Interest: AI (deep learning) based video processing"
 
 - name: "Zhao Bopu"
   role: "Ph.D. Student"
-  photo: "zhao_bopu.jpg"
+  photo: "bopu.jpg"
   email: zhaobopuu@gmail.com
   info: "Research Interest: AI (deep learning) based video processing"
 
@@ -48,7 +48,7 @@
 
 - name: "Mubashir Hussain Shah"
   role: "M.S. Student"
-  photo: "mubashir_hussain_shah.jpg"
+  photo: "hussain.jpg"
   email: shahmubashirhussain5@gmail.com
   info: "Research Interest: AI (deep learning) based video processing"
 
