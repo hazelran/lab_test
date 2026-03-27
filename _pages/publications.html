@@ -32,6 +32,11 @@ permalink: /publications/
         <div class="pub-venue" style="margin-bottom:6px;">
           <em>{{ pub.journal }}</em>{% if pub.volume %}, vol.&nbsp;{{ pub.volume }}{% endif %}{% if pub.pages %}, pp.&nbsp;{{ pub.pages }}{% endif %}{% if pub.year %}, {{ pub.year }}{% endif %}
         </div>
+        {% if pub.image %}
+        <img src="{{ site.baseurl }}/images/pubpic/{{ pub.image }}"
+             alt="{{ pub.title }}"
+             style="width:100%; border:1px solid #ddd; border-radius:3px; margin-bottom:10px;">
+        {% endif %}
         {% if pub.description %}
         <p style="font-size:13px; color:#555; line-height:1.65; margin-bottom:6px;">{{ pub.description }}</p>
         {% endif %}
