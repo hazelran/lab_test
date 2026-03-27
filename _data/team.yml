@@ -18,7 +18,7 @@
 
 - name: "Mubashir Tariq"
   role: "Ph.D. Student"
-  photo: "Tariq.jpg"
+  photo: "Tariq.png"
   email: mubashirtariq9@gmail.com
   info: "Research Interest: AI (deep learning) based video processing, AI (deep learning) based super resolution"
 
@@ -30,7 +30,7 @@
 
 - name: "Zhao Bopu"
   role: "Ph.D. Student"
-  photo: "bopu.jpg"
+  photo: "bopu.png"
   email: zhaobopuu@gmail.com
   info: "Research Interest: AI (deep learning) based video processing"
 
@@ -48,7 +48,7 @@
 
 - name: "Mubashir Hussain Shah"
   role: "M.S. Student"
-  photo: "hussain.jpg"
+  photo: "hussain.png"
   email: shahmubashirhussain5@gmail.com
   info: "Research Interest: AI (deep learning) based video processing"
 
