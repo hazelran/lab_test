@@ -60,6 +60,7 @@ permalink: /publications/
   </h4>
   <ol>
     {% for pub in year_group.items %}
+    {% if pub.highlight != 1 %}
     {% assign abs_id = forloop.index | prepend: "abs-" | append: "-" | append: year_group.name %}
     {% assign bib_id = forloop.index | prepend: "bib-" | append: "-" | append: year_group.name %}
     <li style="margin-bottom:14px;">
@@ -84,6 +85,7 @@ permalink: /publications/
       <div class="pub-collapsible pub-bib" id="{{ bib_id }}"><pre>{{ pub.bibtex }}</pre></div>
       {% endif %}
     </li>
+    {% endif %}
     {% endfor %}
   </ol>
   {% endfor %}
