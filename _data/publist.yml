@@ -4,18 +4,73 @@
   authors: "Tanni Das and Kiho Choi*"
   journal: "IEEE Access"
   volume: "13"
+  pages: "202807-202823"
   year: 2025
+  highlight: 1
   category: "International Journal"
   id: "IJ29"
+  url: "https://ieeexplore.ieee.org/document/11270830"
+  description: >
+    Whole Slide Imaging (WSI), which enables the scanning and archiving of entire tissue slides at ultra-high resolution,
+    has completely changed digital pathology by allowing pathologists to visually walk through the entire tissue sample
+    and investigate regions of interest (ROI). Due to the technological advancements in digital scanners, picture
+    visualization methods, and the integration of artificial intelligence-derived algorithms into these systems, its more
+    recent applications offer promising futures. The huge storage requirements of these large-scale images, however, pose
+    significant challenges for storage, transmission, and retrieval. This paper offers a thorough analysis of the related
+    and recent WSI compression methods created for scanners. The main objective of this analysis is to offer a thorough
+    overview of the current approaches and potential future paths in this quickly developing topic. This work has
+    highlighted the key requirements for effective WSI compression, considering the need to compromise between high
+    compression ratios and little loss of visual and diagnostic quality. Additionally, this study seeks to offer useful
+    insights into the developments achieved in WSI compression algorithms for scanners, illuminating the present
+    difficulties and potential future developments in this important area of digital pathology.
+  bibtex: |
+    @ARTICLE{11270830,
+      author={Das, Tanni and Choi, Kiho},
+      journal={IEEE Access},
+      title={A Study on Advances in Whole Slide Image Compression},
+      year={2025},
+      volume={13},
+      number={},
+      pages={202807-202823},
+      keywords={Transform coding;Image coding;Pathology;DICOM;Image resolution;Image color analysis;Biomedical imaging;Propagation losses;Interoperability;Digital images;Digital pathology;whole slide image;scanners;image compression;JPEG;HEVC},
+      doi={10.1109/ACCESS.2025.3637830}
+    }
 
 - title: "GHMSA-Net: Gated Hierarchical Multi-Scale Self-Attention for Perceptually-Guided AV1 Post-Processing"
   authors: "Bopu Zhao, Woowoen Gwun, Kiho Choi*"
   journal: "IEEE Access"
   volume: "13"
+  pages: "138601-138621"
   year: 2025
   highlight: 1
+  image: "ghmsa_net.png"
   category: "International Journal"
   id: "IJ28"
+  url: "https://ieeexplore.ieee.org/document/10684507"
+  description: >
+    The AOMedia Video 1 (AV1) codec achieves excellent compression efficiency but often introduces visually distracting
+    artifacts at high quantization parameters (QPs), impairing perceptual quality. We propose Gated Hierarchical
+    Multi-Scale Attention Network (GHMSA-Net), a post-processing model that leverages multi-scale self-attention and
+    dynamic gating to adaptively suppress compression artifacts across varying quantization levels while preserving
+    structural fidelity. The network architecture captures both fine-grained details and global context through a
+    hierarchical attention design, enabling robust restoration under diverse compression strengths. We also explore an
+    efficient training scheme that combines unified pretraining on a representative QP with lightweight QP-specific
+    fine-tuning, offering a favorable trade-off between performance and training cost. Results show that, relative to
+    the AV1 anchor, GHMSA-Net achieves BD-rate savings of 11.79% (Y), 21.24% (Cb), and 20.11% (Cr) for BD-PSNR;
+    10.55% (Y), 22.49% (Cb), and 21.44% (Cr) for BD-MS-SSIM; and 15.44% for BD-VMAF across QPs 20, 32, 43, 55, and 63.
+    Visual assessments validate the model's effectiveness in artifact removal and perceptual quality enhancement.
+  bibtex: |
+    @ARTICLE{10684507,
+      author={Zhao, Bopu and Gwun, Woowoen and Choi, Kiho},
+      journal={IEEE Access},
+      title={GHMSA-Net: Gated Hierarchical Multi-Scale Self-Attention for Perceptually-Guided AV1 Post-Processing},
+      year={2025},
+      volume={13},
+      number={},
+      pages={138601-138621},
+      keywords={Video compression;post-processing;convolutional neural networks;attention mechanism},
+      doi={10.1109/ACCESS.2025.3596303}
+    }
 
 - title: "DRGNet: Enhanced VVC Reconstructed Frames Using Dual-Path Residual Gating for High-Resolution Video"
   authors: "Zezhen Gai, Tanni Das, and Kiho Choi*"
